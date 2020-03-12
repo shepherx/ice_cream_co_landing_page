@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Chicle&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #efe7ed;
+  font-family: "Chicle", cursive;
+  font-size: 3rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.brand-logo img {
+  width: 108px;
+  height: 108px;
+}
+
+.main-header .name {
+  display: flex;
+  padding-top: 3rem;
+}
+
+.main-header a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-header ul li {
+  list-style: none;
+  display: inline-flex;
+  padding: 2rem;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 5rem;
+  z-index: 2;
+}
+
+/* Main Section */
+
+.main-home-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 100vh;
+}
+
+.main-home-section .img-wrapper {
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 40%;
+}
+
+.main-home-section .ice-cream-truck {
+  background-image: url(./truck.png);
+  flex-grow: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 50vw;
+  justify-content: flex-start;
+}
+
+.call-to-action .main-text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-self: center;
+  font-size: 9rem;
+  margin-left: 20rem;
+  margin-top: 12rem;
+  margin-right: 7rem;
+}
+
+.call-to-action .subtext {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-self: center;
+  font-size: 4rem;
+  margin-left: 20rem;
+}
+
+.btn {
+  background: #d4f2b4;
+  width: 137px;
+  display: flex;
+  color: black;
+  margin-left: 62rem;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 20%;
+  border: rgba(0, 0, 0, 0.1) solid 2px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Shapes */
+
+.triangle-1 {
+  width: 0;
+  height: 0;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-bottom: 240px solid #feb5a2;
+  position: absolute;
+  left: 118rem;
+  top: 25rem;
+  opacity: 50%;
+  z-index: -1;
+}
+
+.triangle-2 {
+  width: 0;
+  height: 0;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-top: 240px solid #feb5a2;
+  position: absolute;
+  left: 80rem;
+  top: 25rem;
+  opacity: 50%;
+  z-index: -1;
+}
+
+.icons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  left: 100rem;
+  top: 68rem;
+}
+
+.icons a {
+  text-decoration: none;
+  color: black;
+}
+
+.icons i {
+  margin-right: 3rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .brand-logo {
+    display: flex;
+    margin-top: 0rem;
+    margin-left: 2rem;
+  }
+
+  .brand-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .main-header .name {
+    padding-top: 0rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-self: auto;
+  }
+
+  .main-header a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .main-header ul li {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  .main-home-section .img-wrapper {
+    display: none;
+  }
+
+  .main-home-section .call-to-action {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+}
